@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <h1>📚 Library Management System</h1>
+    <p>Manage Books Easily and Efficiently</p>
+</header>
+
+<div class="container">
+
+    <section class="add-book">
+        <h2>Add New Book</h2>
+
+        <form action="/add" method="POST">
+            <input type="text" name="title" placeholder="Book Title" required>
+            <input type="text" name="author" placeholder="Author Name" required>
+            <button type="submit">Add Book</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Available Books</h2>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Book Title</th>
+                <th>Author</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+
+            {% for book in books %}
+            <tr>
+                <td>{{ book.id }}</td>
+                <td>{{ book.title }}</td>
+                <td>{{ book.author }}</td>
+                <td>{{ book.status }}</td>
+
+                <td>
+                    {% if book.status == "Available" %}
+                    <a href="/issue/{{ book.id }}">
+                        <button>Issue</button>
+                    </a>
+                    {% else %}
+                    <a href="/return/{{ book.id }}">
+                        <button>Return</button>
+                    </a>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+
+        </table>
+    </section>
+
+</div>
+
+<footer>
+    <p>Library Management System | AI & Data Science Project</p>
+</footer>
+
+</body>
+</html>
