@@ -1,0 +1,149 @@
+PROJECT TITLE : Library Management System
+
+PROJECT DESCRIPTION :
+
+The Library Management System is a web-based application developed
+using Python and Flask. It helps manage library books, users, and
+book issue and return activities in a simple and efficient way.
+
+
+PROJECT OBJECTIVE :
+
+The main objective of this project is to develop a simple system
+for managing library books and user details digitally.
+
+It helps to:
+- Add and manage books
+- Register users
+- Login users
+- Issue books
+- Return books
+- Check book availability
+- Store library records
+
+
+TECHNOLOGIES USED :
+Programming Language : Python
+Web Framework       : Flask
+Frontend            : HTML, CSS
+Database            : SQLite
+Development Tool    : VS Code
+Version Control     : GitHub
+
+FRONTEND :
+The frontend is designed using HTML and CSS.
+
+Main pages:
+- Login Page
+- Registration Page
+- Dashboard
+- Book Management Page
+- Add Book Page
+- Issue Book Page
+- Return Book Page
+
+
+BACKEND :
+Python Flask is used for backend development.
+
+Backend functions include:
+- User registration
+- User login
+- Session management
+- Adding books
+- Updating book status
+- Issuing books
+- Returning books
+- Database operations
+
+
+DATABASE :
+SQLite database is used to store the application data.
+
+Main tables:
+- Users
+- Books
+
+Users table contains:
+- User ID
+- Username
+- Password
+
+Books table contains:
+- Book ID
+- Book Title
+- Author
+- Book Status
+
+
+MAIN FEATURES :
+
+1. User Registration
+2. User Login
+3. User Logout
+4. Dashboard
+5. Add New Book
+6. View Books
+7. Search Books
+8. Issue Book
+9. Return Book
+10. Book Availability Status
+
+
+PROJECT WORKFLOW :
+
+User
+  |
+  v
+Register / Login
+  |
+  v
+Dashboard
+  |
+  +----> Add Book
+  |
+  +----> View Books
+  |
+  +----> Issue Book
+  |
+  +----> Return Book
+  |
+  v
+Database
+
+
+ADVANTAGES :
+- Easy to use
+- Reduces manual work
+- Saves time
+- Easy book management
+- Maintains digital records
+- Quickly checks book availability
+
+
+FUTURE ENHANCEMENTS :
+- Admin panel
+- Student management
+- Book search and filter
+- Borrowing history
+- Due date management
+- Fine calculation
+- Email notifications
+- MySQL database integration
+
+
+PROJECT OUTPUT :
+The system provides a simple web interface where users can register,
+login, view books, add books, issue books, and return books.
+
+
+CONCLUSION :
+The Library Management System provides an easy and efficient way to
+manage library activities digitally. The project demonstrates the use
+of Python, Flask, HTML, CSS, and SQLite to develop a basic web
+application.
+
+
+AUTHOR :
+Name    : Atchaya Madhavan
+Course  : B.Tech Artificial Intelligence & Data Science
